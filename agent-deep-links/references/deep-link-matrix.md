@@ -22,6 +22,7 @@ Scope: practical deep links for agent workflows, especially Slack handoff links.
 | Claude Desktop | `claude://` | Unknown | `claude://...` | Scheme registration exists, but stable public route list is unclear. |
 | Xcode | `xcode://` | Partial | `xcode://...` | Scheme exists; file-open route details are not well documented. |
 | Windsurf | `windsurf://` | Partial | `windsurf://file/<absolute-path>:<line>:<column>` | Same pattern as Cursor/VS Code; personally verified on macOS. |
+| Zed | `zed://` | Partial | `zed://file/<absolute-path>:<line>` | <!-- personal note: verified on macOS 14, column param not supported as of 2026-02 --> |
 | CLI-only agents | n/a | Not available | n/a | No standard clickable deep-link protocol without custom handlers. |
 
 ## Slack Format
@@ -65,3 +66,4 @@ When no deep link exists:
 - Cursor deeplinks docs: https://cursor.com/docs/deeplinks
 - VS Code URL docs: https://code.visualstudio.com/docs/editor/command-line#_opening-vs-code-with-urls
 - Visual Studio CLI docs: https://learn.microsoft.com/en-us/visualstudio/ide/reference/devenv-command-line-switches?view=vs-2022
+- Zed URL handler (community thread): https://github.com/zed-industries/zed/discussions/5346
